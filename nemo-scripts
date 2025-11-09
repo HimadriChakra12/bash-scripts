@@ -26,9 +26,9 @@ for file in "$@"; do
     )
 
     if [ $? -eq 0 ]; then
-        notify "✅ Extraction complete" "'$name' extracted to '$outdir'"
+        notify "Extraction complete" "'$name' extracted to '$outdir'"
     else
-        notify "❌ Extraction failed" "Could not extract '$name'"
+        notify "Extraction failed" "Could not extract '$name'"
     fi
 done
 
